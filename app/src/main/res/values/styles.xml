@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorTitleBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="AppTheme" >
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator" >
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:width">120dp</item>
+    </style>
+
+    <style name="ProgressDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorTitleBar</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorTitleBar</item>
+    </style>
+
+</resources>

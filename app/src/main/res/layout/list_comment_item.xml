@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/size_08"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/iv_comment_avatar"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:src="@drawable/img_no_avatar"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="1dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/size_08"
+        android:paddingRight="@dimen/size_08"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comment_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_14"
+            android:maxLines="15"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2h"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_14"/>
+</LinearLayout>

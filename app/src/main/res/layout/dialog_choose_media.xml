@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_24"
+        android:text="What do you want to show?"
+        android:textSize="@dimen/font_size_20"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/size_16"
+        android:text="Select it from"
+        android:textSize="@dimen/font_size_18"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_choose_media_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Camera"
+            android:textSize="@dimen/font_size_18"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayBackground"/>
+
+        <Button
+            android:id="@+id/btn_dialog_choose_media_Library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Library"
+            android:textSize="@dimen/font_size_18"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:fancy="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:padding="@dimen/size_32"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/size_32"-->
+        <!--android:text="@string/choose"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="@dimen/font_size_18"/>-->
+
+    <!--<mehdi.sakout.fancybuttons.FancyButton-->
+        <!--android:id="@+id/btn_dialog_choose_media_gallery"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="@dimen/size_08"-->
+        <!--android:paddingBottom="@dimen/size_08"-->
+        <!--android:paddingLeft="@dimen/size_32"-->
+        <!--android:paddingRight="@dimen/size_32"-->
+        <!--android:layout_marginBottom="@dimen/size_16"-->
+        <!--fancy:fb_defaultColor="@android:color/transparent"-->
+        <!--fancy:fb_focusColor="@color/colorPrimaryDark"-->
+        <!--fancy:fb_text="From Gallery"-->
+        <!--fancy:fb_textSize = "@dimen/font_size_18"-->
+        <!--fancy:fb_textColor="@android:color/black"-->
+        <!--fancy:fb_borderWidth = "2dp"-->
+        <!--fancy:fb_borderColor = "@android:color/black"-->
+        <!--fancy:fb_radius = "@dimen/size_32"/>-->
+
+    <!--<mehdi.sakout.fancybuttons.FancyButton-->
+        <!--android:id="@+id/btn_dialog_choose_media_camera"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="@dimen/size_08"-->
+        <!--android:paddingBottom="@dimen/size_08"-->
+        <!--android:paddingLeft="@dimen/size_32"-->
+        <!--android:paddingRight="@dimen/size_32"-->
+        <!--fancy:fb_defaultColor="@android:color/transparent"-->
+        <!--fancy:fb_focusColor="@color/colorPrimaryDark"-->
+        <!--fancy:fb_text="From Camera"-->
+        <!--fancy:fb_textSize = "@dimen/font_size_18"-->
+        <!--fancy:fb_textColor="@android:color/black"-->
+        <!--fancy:fb_borderWidth = "2dp"-->
+        <!--fancy:fb_borderColor = "@android:color/black"-->
+        <!--fancy:fb_radius = "@dimen/size_32"/>-->
+<!--</LinearLayout>-->

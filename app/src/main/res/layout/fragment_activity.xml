@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:text="@string/recent_activity"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/colorTitleBar"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_08"
+            android:background="@android:color/white"
+            android:scrollbars="vertical"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/size_08" />
+    </RelativeLayout>
+</LinearLayout>

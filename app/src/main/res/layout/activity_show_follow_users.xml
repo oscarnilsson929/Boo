@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorTitleBar">
+
+        <TextView
+            android:id="@+id/tv_show_follow_users_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/size_08"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_20"/>
+
+        <ImageView
+            android:id="@+id/iv_show_follow_users_back"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/size_08"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/back"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_show_follow_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipe_refresh_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srl_direction="bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:paddingTop="105dp" />
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/home_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_08"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/iv_home_avatar"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:layout_marginRight="@dimen/size_16"
+                android:layout_marginEnd="@dimen/size_16"
+                android:src="@drawable/img_no_avatar"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_header"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:background="@color/colorGrayBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:paddingTop="@dimen/size_08"
+            android:paddingBottom="@dimen/size_08"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/btn_home_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_16"
+                    android:layout_height="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_08"
+                    android:layout_marginEnd="@dimen/size_08"
+                    android:src="@drawable/ic_text"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write it"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_home_media"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_16"
+                    android:layout_height="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_08"
+                    android:layout_marginEnd="@dimen/size_08"
+                    android:src="@drawable/ic_media"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show it"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_home_place"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_16"
+                    android:layout_height="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_08"
+                    android:layout_marginEnd="@dimen/size_08"
+                    android:src="@drawable/ic_place_black"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find it"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_08"
+            android:background="@color/colorGrayBackground"/>
+    </LinearLayout>
+</FrameLayout>

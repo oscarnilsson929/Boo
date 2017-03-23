@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_email_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.EmailLogin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_login"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/image_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_64"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:layout_margin="@dimen/size_08"
+                android:src="@drawable/ic_back"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/image_view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/email_login_back"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/logo_view"
+                    android:layout_width="@dimen/size_200"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_logo"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image_view" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+                <LinearLayout
+                    android:id="@+id/fields_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_32"
+                    android:layout_marginRight="@dimen/size_32"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_email_login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/username_or_email"
+                        app:met_baseColor="@android:color/white"
+                        app:met_textColor="@android:color/white"
+                        app:met_textColorHint="@android:color/white"
+                        app:met_underlineColor="@android:color/white"
+                        app:met_primaryColor="@color/colorMainButtonSelected"
+                        app:met_errorColor="@color/colorMainButtonSelected"
+                        app:met_floatingLabel="normal"
+                        app:met_iconLeft="@drawable/ic_user"
+                        app:met_iconPadding="@dimen/size_04"
+                        app:met_clearButton="true"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_email_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"
+                        app:met_baseColor="@android:color/white"
+                        app:met_textColor="@android:color/white"
+                        app:met_textColorHint="@android:color/white"
+                        app:met_underlineColor="@android:color/white"
+                        app:met_primaryColor="@color/colorMainButtonSelected"
+                        app:met_errorColor="@color/colorMainButtonSelected"
+                        app:met_floatingLabel="normal"
+                        app:met_iconLeft="@drawable/ic_password"
+                        app:met_iconPadding="@dimen/size_04"
+                        app:met_clearButton="true"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_email_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginLeft="@dimen/size_32"
+                    android:layout_marginRight="@dimen/size_32"
+                    fancy:fb_defaultColor="@color/colorLoginEmailNorm"
+                    fancy:fb_focusColor="@color/colorLoginEmailPressed"
+                    fancy:fb_text="LOGIN"
+                    fancy:fb_textSize = "@dimen/font_size_16"
+                    fancy:fb_textColor="@android:color/white"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

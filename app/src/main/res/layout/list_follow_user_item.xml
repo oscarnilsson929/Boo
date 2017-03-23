@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_08"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/iv_follow_user_avatar"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        android:src="@drawable/img_no_avatar"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_follow_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/size_08"
+        android:layout_marginStart="@dimen/size_08"
+        android:text="@string/username"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold"
+        android:singleLine="true"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_follow_user_follow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        fancy:fb_defaultColor="@android:color/transparent"
+        fancy:fb_focusColor="@color/colorTitleBar"
+        fancy:fb_borderWidth = "1dp"
+        fancy:fb_borderColor = "@color/colorFollow"
+        fancy:fb_text="FOLLOW"
+        fancy:fb_textSize = "@dimen/font_size_12"
+        fancy:fb_textColor="@color/colorFollow" />
+</LinearLayout>

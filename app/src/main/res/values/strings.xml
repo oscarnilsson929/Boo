@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Boo</string>
+
+    <string name="facebook_app_id">1761146647505669</string>
+
+    <string name="gcm_server_key">AIzaSyBBWOUdo9IQRYj7QtBV4_6c7LRdizLPxwI</string>
+    <string name="gcm_sender_id">169679222344</string>
+
+    <string name="title">Title</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="booed_users">Booed Users</string>
+
+    <string name="post_to_Boo">Post to Boo</string>
+    <string name="about">About</string>
+    <string name="comments">Comments</string>
+    <string name="detail">Detail</string>
+    <string name="most_booed">MOST BOOED</string>
+    <string name="take_photo">Take a Photo</string>
+    <string name="want_to_delete">Do you really want to delete?</string>
+    <string name="old_password">Old password</string>
+    <string name="choose_library">Choose From Library</string>
+    <string name="recent_activity">RECENT ACTIVITY</string>
+    <string name="login_with">Login with&#8230;</string>
+    <string name="take_photo_video">Take a Photo/Video</string>
+    <string name="what_do_you_want">What do you want to show?</string>
+    <string name="search_for_a_user">Search for a user</string>
+    <string name="choose">Choose</string>
+    <string name="splash_description">Boo is a fun way to share your daily frustrations with other people around the world</string>
+    <string name="splash_bottom_txt">See something you don\'t like? \n Just BOO it&#x21;</string>
+    <string name="page_content">Lorem upsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam&#8230;</string>
+    <string name="home_header">What\'s bugging you today?</string>
+
+    <string name="edit_profile">Edit profile</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="posts">Posts</string>
+    <string name="full_name">Full name</string>
+    <string name="username">Username</string>
+    <string name="your_name">Your name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="bio">Bio</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="back">Back</string>
+
+    <string name="image_view">ImageView</string>
+
+
+    <!--Error Message-->
+    <string name="error_field_required">This field is required</string>
+    <string name="error_valid_email_required">Please enter a valid Email address.</string>
+    <string name="error_matched_password_required">Doesn\'t match password.</string>
+
+    <!--Drawer Toggle-->
+    <string name="str_navigation_drawer_open">open</string>
+    <string name="str_navigation_drawer_close">close</string>
+
+
+    <string-array name="menu_titles">
+        <item>About</item>
+        <item>Settings</item>
+        <item>Push Notifications</item>
+        <item>Contact Us</item>
+        <item>Change Password</item>
+        <item>Logout</item>
+    </string-array>
+
+    <array name="menu_icons">
+        <item>@drawable/ic_about</item>
+        <item>@drawable/ic_setting</item>
+        <item>@drawable/ic_notification</item>
+        <item>@drawable/ic_email</item>
+        <item>@drawable/ic_password</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

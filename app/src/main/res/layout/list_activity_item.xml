@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_08"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/iv_activity_avatar"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"
+        android:src="@drawable/img_no_avatar"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="1dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/size_08"
+        android:layout_marginStart="@dimen/size_08"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_activity_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_activity_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" started following "
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/font_size_12"/>
+
+        <TextView
+            android:id="@+id/tv_activity_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You."
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_12"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2h"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_12"/>
+</LinearLayout>

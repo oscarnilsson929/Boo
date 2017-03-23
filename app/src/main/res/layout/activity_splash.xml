@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Splash">
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_splash"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_32"
+        android:gravity="center"
+        android:text="@string/splash_description"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_15" />
+
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_96"
+        android:src="@drawable/img_logo"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_32"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/splash_bottom_txt"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

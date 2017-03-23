@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="whiteColorWithOpecity">#90ffffff</color>
+    <color name="colorLoginFbNorm">#CC385289</color>
+    <color name="colorLoginFbPressed">#CC1b3f8b</color>
+    <color name="colorLoginTwitterNorm">#CC3b8fdc</color>
+    <color name="colorLoginTwitterPressed">#CC157ddd</color>
+    <color name="colorLoginEmailNorm">#D9dc102c</color>
+    <color name="colorLoginEmailPressed">#D9e80427</color>
+    <color name="colorTitleBar">#ff2b4b</color>
+    <color name="colorMenu">#393e72</color>
+    <color name="colorFollow">#008800</color>
+
+    <color name="colorDarkGrayText">#333333</color>
+    <color name="colorGrayText">#7f7f7f</color>
+
+    <color name="colorGrayBackground">#ededed</color>
+
+    <color name="colorMainButtonUnselected">#b9b9b9</color>
+    <color name="colorMainButtonSelected">#ff2b4b</color>
+
+</resources>

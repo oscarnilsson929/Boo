@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_tag_user_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/size_08"
+            android:inputType="text"
+            android:hint="@string/search_for_a_user"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_20"
+            android:drawableLeft="@drawable/ic_search_black"
+            android:drawableStart="@drawable/ic_search_black"
+            android:drawablePadding="@dimen/size_16"/>
+
+        <ImageView
+            android:id="@+id/iv_tag_user_close"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:padding="@dimen/size_08"
+            android:src="@drawable/ic_cancel"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_tag_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

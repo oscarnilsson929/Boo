@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout_bootique"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srl_direction="both">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/iv_bootique_avatar"
+                    android:layout_width="@dimen/size_96"
+                    android:layout_height="@dimen/size_96"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/size_08"
+                    android:src="@drawable/img_no_avatar"
+                    app:civ_border_color="@android:color/darker_gray"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/tv_bootique_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/size_04"
+                    android:layout_marginBottom="@dimen/size_04"
+                    android:layout_marginLeft="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_16"
+                    android:background="@color/colorGrayBackground"/>
+
+                <TextView
+                    android:id="@+id/tv_bootique_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_04"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@color/colorGrayText"
+                    android:lines="2"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/size_04"
+                    android:layout_marginBottom="@dimen/size_04"
+                    android:layout_marginLeft="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_16"
+                    android:background="@color/colorGrayBackground"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:id="@+id/bootique_following"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_04"
+                            android:gravity="center"
+                            android:text="@string/following"
+                            android:textSize="@dimen/font_size_16"
+                            android:textColor="@color/colorGrayText"/>
+
+                        <TextView
+                            android:id="@+id/tv_bootique_following_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_size_16"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bootique_followers"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_04"
+                            android:gravity="center"
+                            android:text="@string/followers"
+                            android:textSize="@dimen/font_size_16"
+                            android:textColor="@color/colorGrayText"/>
+
+                        <TextView
+                            android:id="@+id/tv_bootique_followers_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_size_16"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bootique_posts"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_04"
+                            android:gravity="center"
+                            android:text="@string/posts"
+                            android:textSize="@dimen/font_size_16"
+                            android:textColor="@color/colorGrayText"/>
+
+                        <TextView
+                            android:id="@+id/tv_bootique_posts_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_size_16"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_bootique_follow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginTop="@dimen/size_08"
+                        android:layout_marginBottom="@dimen/size_08"
+                        android:paddingLeft="@dimen/size_24"
+                        android:paddingRight="@dimen/size_24"
+                        android:paddingTop="@dimen/size_08"
+                        android:paddingBottom="@dimen/size_08"
+                        fancy:fb_defaultColor="@android:color/transparent"
+                        fancy:fb_focusColor="@color/colorFollow"
+                        fancy:fb_radius="0dp"
+                        fancy:fb_borderWidth = "2dp"
+                        fancy:fb_borderColor = "@color/colorFollow"
+                        fancy:fb_text="FOLLOW"
+                        fancy:fb_textSize = "@dimen/font_size_16"
+                        fancy:fb_textColor="@color/colorFollow" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_bootique"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/size_08" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_post_boo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PostToBoo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorTitleBar">
+
+        <ImageView
+            android:id="@+id/iv_post_back"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/size_08"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/size_08"
+            android:gravity="center"
+            android:text="@string/post_to_Boo"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_20"/>
+
+        <ImageView
+            android:id="@+id/iv_post_apply"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/size_08"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_apply"
+            android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_post_user_avatar"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:layout_margin="@dimen/size_16"
+            android:src="@drawable/img_no_avatar"
+            app:civ_border_color="@android:color/darker_gray"
+            app:civ_border_width="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_post_boo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:textSize="@dimen/font_size_18"
+            android:textColor="@color/colorTitleBar"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_150"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        card_view:cardCornerRadius="@dimen/size_08">
+
+        <EditText
+            android:id="@+id/et_post_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size_08"
+            android:background="@android:color/transparent"
+            android:gravity="top|start"
+            android:hint="Write something..."
+            android:maxLines="15"
+            android:textColorHint="@color/colorGrayText"
+            android:textSize="@dimen/font_size_16" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_16"
+        card_view:cardCornerRadius="@dimen/size_08">
+
+        <VideoView
+            android:id="@+id/vv_post_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity = "center"/>
+
+        <ImageView
+            android:id="@+id/iv_post_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/app_name"/>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
